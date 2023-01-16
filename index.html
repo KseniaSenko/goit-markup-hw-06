@@ -593,19 +593,24 @@
           </ul>
         </div>
         <div>
-          <h2 class="footer-title">Subscribe</h2>
-          <input
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            class="footer-email"
-          />
-          <button type="submit">
-            Subscribe
-            <svg width="24px" height="20px">
-              <use href="./images/svg/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="footer-form">
+            <div class="footer-subscribe">
+              <label for="subscribe" class="footer-title"> Subscribe </label>
+              <input
+                type="email"
+                name="subscribe"
+                id="subscribe"
+                placeholder="E-mail"
+                class="footer-email"
+              />
+            </div>
+            <button class="button footer-btn">
+              Subscribe
+              <svg class="footer-btn-icon" width="24px" height="20px">
+                <use href="./images/svg/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -618,41 +623,52 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <div class="modal-box">
-            <label for="name" class="modal-label">Name</label>
-            <div class="modal-field">
-              <input type="text" name="name" id="name" class="modal-input" />
-              <svg width="18px" height="18px" class="modal-icon">
-                <use href="./images/svg/sprite.svg#icon-person-black"></use>
-              </svg>
-            </div>
-            <label for="name" class="modal-label">Phone</label>
-            <div class="modal-field">
-              <input
-                type="tel"
-                name="phone_number"
-                id="phone_number"
-                class="modal-input"
-              />
-              <svg width="18px" height="24px" class="modal-icon">
-                <use href="./images/svg/sprite.svg#icon-phone-black"></use>
-              </svg>
-            </div>
-            <label for="email" class="modal-label">Email</label>
-            <div class="modal-field">
-              <input type="email" name="email" id="email" class="modal-input" />
-              <svg width="18px" height="24px" class="modal-icon">
-                <use href="./images/svg/sprite.svg#icon-email-black"></use>
-              </svg>
-            </div>
-            <label for="comment" class="modal-label">Comment</label>
-            <textarea
-              class="modal-comment"
-              name="comment"
-              id="comment"
-              placeholder="Text input"
-            ></textarea>
+          <label for="name" class="modal-label">Name</label>
+          <div class="modal-field">
+            <input type="text" name="name" id="name" class="modal-input" />
+            <svg width="18px" height="18px" class="modal-icon">
+              <use href="./images/svg/sprite.svg#icon-person-black"></use>
+            </svg>
           </div>
+          <label for="name" class="modal-label">Phone</label>
+          <div class="modal-field">
+            <input
+              type="tel"
+              name="phone_number"
+              id="phone_number"
+              class="modal-input"
+            />
+            <svg width="18px" height="24px" class="modal-icon">
+              <use href="./images/svg/sprite.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <label for="email" class="modal-label">Email</label>
+          <div class="modal-field">
+            <input type="email" name="email" id="email" class="modal-input" />
+            <svg width="18px" height="24px" class="modal-icon">
+              <use href="./images/svg/sprite.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <label for="comment" class="modal-label">Comment</label>
+          <textarea
+            class="modal-comment"
+            name="comment"
+            id="comment"
+            placeholder="Text input"
+          ></textarea>
+          <label class="checkbox">
+            <input type="checkbox" class="secret-name checkbox-input" />
+            <span class="checkbox-icon">
+              <svg class="policy-icon" width="10px" height="8px">
+                <use href="./images/svg/sprite.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <p class="checkbox-text">
+              I accept the terms and conditions of the
+              <a href="./index.html" class="checkbox-privacy">Privacy Policy</a>
+            </p>
+          </label>
+          <button type="submit" class="button modal-btn">Send</button>
         </form>
       </div>
     </div>

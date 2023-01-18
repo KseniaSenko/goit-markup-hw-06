@@ -602,6 +602,7 @@
                 id="subscribe"
                 placeholder="E-mail"
                 class="footer-input"
+                required
               />
             </div>
             <button class="button footer-btn" type="submit">
@@ -625,7 +626,13 @@
         <form class="modal-form">
           <label for="name" class="modal-label">Name</label>
           <div class="modal-field">
-            <input type="text" name="name" id="name" class="modal-input" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal-input"
+              required
+            />
             <svg width="18px" height="18px" class="modal-icon">
               <use href="./images/svg/sprite.svg#icon-person-black"></use>
             </svg>
@@ -637,6 +644,7 @@
               name="phone_number"
               id="phone_number"
               class="modal-input"
+              required
             />
             <svg width="18px" height="24px" class="modal-icon">
               <use href="./images/svg/sprite.svg#icon-phone-black"></use>
@@ -644,7 +652,13 @@
           </div>
           <label for="email" class="modal-label">Email</label>
           <div class="modal-field">
-            <input type="email" name="email" id="email" class="modal-input" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="modal-input"
+              required
+            />
             <svg width="18px" height="24px" class="modal-icon">
               <use href="./images/svg/sprite.svg#icon-email-black"></use>
             </svg>
@@ -655,12 +669,14 @@
             name="comment"
             id="comment"
             placeholder="Text input"
+            required
           ></textarea>
           <label class="checkbox">
             <input
               type="checkbox"
               name="checkbox"
               class="secret-name checkbox-input"
+              required
             />
             <span class="checkbox-icon">
               <svg class="policy-icon" width="10px" height="8px">
